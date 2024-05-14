@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="/style-antd.87e2058c.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="theme-color" content="#1677ff">
+<meta name="build-time" content="1715658386707">
+<meta name="build-hash" content="787cd941253b214b2e1bd9307cbf1a4af2bdcf8e">
+<link rel="shortcut icon" href="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png">
+<link rel="prefetch" as="font" href="//at.alicdn.com/t/webfont_6e11e43nfj.woff2" type="font/woff2" crossorigin>
+<link rel="prefetch" as="font" href="//at.alicdn.com/t/webfont_6e11e43nfj.woff" type="font/woff" crossorigin>
+<link rel="prefetch" as="font" href="//at.alicdn.com/t/webfont_6e11e43nfj.ttf" type="font/ttf" crossorigin>
+<link rel="prefetch" as="font" href="//at.alicdn.com/t/webfont_exesdog9toj.woff2" type="font/woff2" crossorigin>
+<link rel="prefetch" as="font" href="//at.alicdn.com/t/webfont_exesdog9toj.woff" type="font/woff" crossorigin>
+<link rel="prefetch" as="font" href="//at.alicdn.com/t/webfont_exesdog9toj.ttf" type="font/ttf" crossorigin>
+<link rel="preload" as="font" href="//at.alicdn.com/wf/webfont/exMpJIukiCms/Gsw2PSKrftc1yNWMNlXgw.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="//at.alicdn.com/wf/webfont/exMpJIukiCms/vtu73by4O2gEBcvBuLgeu.woff" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/umi.070e0ea4.css">
+<script>
+    (function () {
+      function isLocalStorageNameSupported() {
+        const testKey = 'test';
+        const storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      const pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        const pathname = path.indexOf('/') === 0 ? path : '/' + path;
+        if (!zhCN) {
+          // to enUS
+          return /\/?index(-cn)?/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.indexOf('/') === pathname.length - 1) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      const queryString = location.search;
+      if (queryString) {
+        const isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig);
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        const lang =
+          (window.localStorage && localStorage.getItem('locale')) ||
+          ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn'
+            ? 'zh-CN'
+            : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })();
+    </script>
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-72788897-1"></script>
+<script>window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-72788897-1');</script>
+<script>!function(){"use strict";var t="/".replace(/([^/])$/,"$1/"),e=location.pathname,n=e.startsWith(t)&&decodeURI("/".concat(e.slice(t.length)));if(n){var a=document,c=a.head,r=a.createElement.bind(a),i=function(t,e,n){var a,c=e.r[t]||(null===(a=Object.entries(e.r).find((function(e){var n=e[0];return new RegExp("^".concat(n.replace(/\/:[^/]+/g,"/[^/]+").replace("/*","/.+"),"$")).test(t)})))||void 0===a?void 0:a[1]);return null==c?void 0:c.map((function(t){var a=e.f[t][1],c=e.f[t][0];return{type:c.split(".").pop(),url:"".concat(n.publicPath).concat(c),attrs:[["data-".concat(e.b),"".concat(e.p,":").concat(a)]]}}))}(n,{"p":"antd","b":"webpack","f":[["components__avatar__index.zh-CN.md.f2a34fa8.async.js",2],["docs__blog__tree-shaking.zh-CN.md.b63291ae.async.js",18],["components__steps__index.en-US.md.7e06ff7f.async.js",48],["docs__react__compatible-style.zh-CN.md.4ce7f158.async.js",74],["docs__spec__feedback.en-US.md.58f6508b.async.js",120],["docs__spec__research-exception.zh-CN.md.06a9a92b.async.js",146],["components__input__index.en-US.md.dcdd4cec.async.js",158],["docs__spec__colors.zh-CN.md.7f57e174.async.js",193],["docs__react__use-with-next.en-US.md.332120a7.async.js",230],["docs__react__migrate-less-variables.zh-CN.md.61c5d03d.async.js",291],["components__list__index.zh-CN.md.8c381426.async.js",315],["docs__react__customize-theme.en-US.md.f1dfa56d.async.js",345],["dumi__theme__layouts__DocLayout__index.bb54aca8.async.js",367],["components__tree__index.zh-CN.md.35d799b7.async.js",381],["components__float-button__index.zh-CN.md.ae8cff4e.async.js",390],["components__empty__index.en-US.md.fc96a1f1.async.js",453],["components__transfer__index.en-US.md.36c5a515.async.js",474],["docs__react__recommendation.zh-CN.md.8b015dfd.async.js",487],["components__card__index.zh-CN.md.19bc4fe9.async.js",509],["docs__react__common-props.en-US.md.6e4ee1eb.async.js",529],["docs__spec__reaction.en-US.md.77c5af5b.async.js",535],["docs__spec__research-result.en-US.md.9f590676.async.js",557],["docs__resources.zh-CN.md.90a55d33.async.js",572],["docs__blog__contributor-development-maintenance-guide.zh-CN.md.0746d169.async.js",614],["docs__react__getting-started.en-US.md.81b48a66.async.js",631],["components__tag__index.zh-CN.md.95df4c9b.async.js",633],["docs__spec__visualization-page.zh-CN.md.8ca81dcf.async.js",635],["docs__spec__lightweight.en-US.md.c6b3621c.async.js",714],["docs__blog__hydrate-cssinjs.zh-CN.md.bec7a5d4.async.js",727],["components__config-provider__index.zh-CN.md.42bf5dbb.async.js",745],["components__checkbox__index.zh-CN.md.11dae050.async.js",751],["docs__spec__cases.zh-CN.md.f0e45a29.async.js",844],["components__space__index.en-US.md.56d64a83.async.js",876],["components__mentions__index.en-US.md.b3f31668.async.js",878],["docs__blog__testing-migrate.zh-CN.md.85cc5818.async.js",882],["docs__spec__research-empty.en-US.md.8feca2b4.async.js",916],["components__tree-select__index.zh-CN.md.7595e584.async.js",1009],["docs__blog__line-ellipsis.en-US.md.7e09701f.async.js",1012],["dumi__theme__layouts__GlobalLayout.efa0cc55.async.js",1032],["components__time-picker__index.zh-CN.md.275f55b4.async.js",1176],["components__tree__index.en-US.md.6eb273b4.async.js",1185],["docs__blog__type-util.en-US.md.34b1d675.async.js",1187],["components__popconfirm__index.zh-CN.md.d1231b9c.async.js",1198],["components__progress__index.en-US.md.b7668476.async.js",1199],["components__radio__index.en-US.md.9060f874.async.js",1214],["docs__react__faq.en-US.md.991112db.async.js",1261],["docs__spec__research-workbench.en-US.md.5eb67a9d.async.js",1350],["docs__blog__to-be-what-you-see.en-US.md.e9631668.async.js",1389],["docs__blog__v4-ood.en-US.md.8004c808.async.js",1408],["components__divider__index.en-US.md.2bea16de.async.js",1418],["docs__spec__detail-page.en-US.md.fd020887.async.js",1449],["docs__react__i18n.en-US.md.23da35bb.async.js",1483],["docs__spec__dark.zh-CN.md.6b6a6571.async.js",1486],["docs__spec__transition.en-US.md.85688aec.async.js",1494],["components__skeleton__index.en-US.md.950ba1dd.async.js",1527],["components__card__index.en-US.md.f7b5f4c2.async.js",1544],["docs__spec__values.en-US.md.7d9815b1.async.js",1546],["components__switch__index.zh-CN.md.c2534cb7.async.js",1564],["docs__resources.en-US.md.28d1b805.async.js",1594],["components__icon__index.zh-CN.md.13e048ae.async.js",1615],["docs__blog__form-names.en-US.md.ec64d38a.async.js",1711],["components__result__index.zh-CN.md.533e0e3b.async.js",1735],["components___util__index.zh-CN.md.d2f935cb.async.js",1782],["docs__blog__testing-migrate.en-US.md.de573fcb.async.js",1914],["docs__blog__why-not-static.zh-CN.md.a48ffedf.async.js",1915],["dumi__tmp-production__dumi__theme__ContextWrapper.d59a8122.async.js",1923],["components__typography__index.en-US.md.fcff4d9b.async.js",1978],["docs__blog__mock-project-build.zh-CN.md.1b2df86e.async.js",2047],["components__timeline__index.zh-CN.md.50baefe0.async.js",2079],["components__flex__index.en-US.md.e82b0907.async.js",2096],["docs__react__customize-theme.zh-CN.md.5db71d2f.async.js",2106],["docs__spec__font.zh-CN.md.68d89a39.async.js",2115],["docs__spec__buttons.zh-CN.md.cc2425e9.async.js",2233],["docs__blog__check-conduct.zh-CN.md.75e4fb7a.async.js",2322],["docs__spec__proximity.zh-CN.md.633d24eb.async.js",2326],["components__dropdown__index.en-US.md.7704425f.async.js",2361],["docs__spec__research-overview.en-US.md.d9bd487e.async.js",2376],["components__app__index.en-US.md.857892b1.async.js",2443],["components__menu__index.en-US.md.8d2a14ea.async.js",2477],["components__drawer__index.zh-CN.md.a90a8bad.async.js",2482],["docs__spec__shadow.zh-CN.md.f05011d4.async.js",2512],["docs__blog__color-picker.en-US.md.8cec3bac.async.js",2537],["docs__spec__overview.zh-CN.md.6a6b7e43.async.js",2574],["components__descriptions__index.en-US.md.f9ac14b5.async.js",2599],["components__tag__index.en-US.md.213d3d4f.async.js",2600],["components__table__index.zh-CN.md.3d6e68dc.async.js",2639],["docs__blog__getContainer.en-US.md.48da9188.async.js",2648],["components__slider__index.zh-CN.md.0330a4bf.async.js",2693],["components__button__index.en-US.md.6addcffc.async.js",2695],["docs__spec__research-overview.zh-CN.md.229407e0.async.js",2710],["components__grid__index.zh-CN.md.950ed7bd.async.js",2764],["docs__blog__v4-ood.zh-CN.md.a4657ed3.async.js",2769],["docs__spec__research-exception.en-US.md.bf726d47.async.js",2776],["components__checkbox__index.en-US.md.1169befb.async.js",2790],["components__cascader__index.zh-CN.md.33480945.async.js",2805],["components__flex__index.zh-CN.md.a14a4981.async.js",2865],["docs__react__i18n.zh-CN.md.9d6124d8.async.js",2878],["components__spin__index.zh-CN.md.0c92ebd8.async.js",2913],["docs__spec__visual.en-US.md.4de75714.async.js",2988],["components__popover__index.zh-CN.md.b712ada5.async.js",2990],["components__statistic__index.zh-CN.md.c473ff9c.async.js",3005],["components__qr-code__index.en-US.md.c05ae81c.async.js",3061],["docs__spec__data-format.zh-CN.md.2707cfd7.async.js",3108],["components__affix__index.en-US.md.d7308888.async.js",3154],["docs__spec__cases.en-US.md.82caee3d.async.js",3196],["docs__spec__icon.en-US.md.3dc65782.async.js",3218],["docs__spec__layout.zh-CN.md.d2fb9db9.async.js",3395],["components__color-picker__index.en-US.md.6b96ed74.async.js",3419],["components__tooltip__index.zh-CN.md.12b046a4.async.js",3451],["docs__blog__tree-shaking.en-US.md.fa0286b0.async.js",3465],["dumi__pages__404__index.21904b25.async.js",3509],["docs__spec__visual.zh-CN.md.153d85f3.async.js",3565],["docs__spec__layout.en-US.md.f4f36f90.async.js",3567],["docs__blog__tooltip-align.en-US.md.f0c2c657.async.js",3583],["components__notification__index.zh-CN.md.468bf2d8.async.js",3604],["docs__react__use-with-vite.en-US.md.a81600cd.async.js",3610],["docs__blog__why-not-static.en-US.md.15c05833.async.js",3652],["docs__react__introduce.zh-CN.md.53f50a55.async.js",3748],["docs__react__use-with-rsbuild.en-US.md.fbeea9d7.async.js",3762],["components__input__index.zh-CN.md.aaa3acbe.async.js",3850],["components__layout__index.zh-CN.md.fd45d244.async.js",3853],["components__calendar__index.en-US.md.c2b17a59.async.js",3880],["components__cascader__index.en-US.md.aa7f1f57.async.js",3891],["docs__spec__feedback.zh-CN.md.aaa4f696.async.js",3914],["docs__react__contributing.zh-CN.md.ec43df80.async.js",3929],["docs__blog__extract-ssr.zh-CN.md.0c288886.async.js",3932],["docs__spec__research-message-and-feedback.zh-CN.md.cd137c31.async.js",4001],["docs__react__faq.zh-CN.md.a1f5d4ac.async.js",4010],["components__divider__index.zh-CN.md.0ad6139a.async.js",4053],["docs__blog__modal-hook-order.zh-CN.md.69bdfecb.async.js",4076],["docs__blog__css-in-js.en-US.md.493138e5.async.js",4105],["docs__react__server-side-rendering.en-US.md.402b7cc1.async.js",4112],["components__carousel__index.zh-CN.md.38b989e4.async.js",4121],["components__tree-select__index.en-US.md.2f305cd3.async.js",4142],["components__auto-complete__index.en-US.md.a8421def.async.js",4147],["docs__spec__font.en-US.md.6ada3693.async.js",4164],["docs__react__css-variables.zh-CN.md.8308c2e7.async.js",4194],["docs__spec__research-message-and-feedback.en-US.md.11abe9b2.async.js",4195],["docs__spec__data-list.en-US.md.7c76817a.async.js",4201],["docs__blog__css-var-plan.zh-CN.md.e9c51693.async.js",4215],["docs__spec__research-form.zh-CN.md.1312235c.async.js",4236],["docs__blog__line-ellipsis.zh-CN.md.ec604067.async.js",4250],["docs__blog__contributor-development-maintenance-guide.en-US.md.2c508e42.async.js",4260],["docs__spec__research-empty.zh-CN.md.614b8c56.async.js",4271],["components__watermark__index.en-US.md.c2ef9161.async.js",4292],["docs__blog__issue-helper.en-US.md.1f1d195a.async.js",4319],["docs__blog__to-be-collaborator.zh-CN.md.4e363d3e.async.js",4338],["docs__blog__css-in-js.zh-CN.md.24bdb275.async.js",4349],["CHANGELOG.zh-CN.md.00a1f321.async.js",4385],["components__rate__index.zh-CN.md.de2379e6.async.js",4448],["docs__blog__github-actions-workflow.zh-CN.md.c0980e7d.async.js",4498],["components__pagination__index.en-US.md.bd6efa7c.async.js",4507],["docs__react__migration-v5.zh-CN.md.68bbe5d4.async.js",4551],["docs__spec__lightweight.zh-CN.md.9dede992.async.js",4627],["dumi__pages__theme-editor__index.a2336282.async.js",4646],["docs__blog__issue-helper.zh-CN.md.57325f8a.async.js",4667],["docs__spec__transition.zh-CN.md.8fa9e779.async.js",4748],["components__empty__index.zh-CN.md.61c24f4b.async.js",4764],["components__config-provider__index.en-US.md.d4f3577b.async.js",4766],["components__collapse__index.zh-CN.md.a3b78682.async.js",4781],["components__alert__index.zh-CN.md.16a31153.async.js",4783],["components__layout__index.en-US.md.1a36fbfa.async.js",4852],["docs__spec__shadow.en-US.md.bd6c5ade.async.js",4860],["components__select__index.en-US.md.7c56e9c9.async.js",4882],["components__popover__index.en-US.md.a2639c00.async.js",4904],["components__badge__index.en-US.md.850e7b5e.async.js",4918],["docs__spec__motion.zh-CN.md.7641865b.async.js",4967],["docs__spec__colors.en-US.md.e90caecc.async.js",4985],["docs__spec__research-navigation.zh-CN.md.5be59e5d.async.js",5029],["docs__spec__research-result.zh-CN.md.1f781fcc.async.js",5081],["docs__react__use-with-umi.zh-CN.md.854b40f7.async.js",5119],["components__avatar__index.en-US.md.5c428c72.async.js",5129],["docs__blog__notification-stack.en-US.md.efd6a468.async.js",5163],["docs__blog__suspense.zh-CN.md.8612a6d9.async.js",5210],["docs__spec__values.zh-CN.md.36a0ef7f.async.js",5218],["docs__react__use-with-umi.en-US.md.b516e752.async.js",5289],["docs__spec__proximity.en-US.md.8393cd33.async.js",5306],["components__spin__index.en-US.md.2aaf8ed3.async.js",5406],["components__tabs__index.en-US.md.da076edf.async.js",5413],["docs__spec__repetition.zh-CN.md.80f70b02.async.js",5441],["docs__spec__dark.en-US.md.32db995e.async.js",5491],["docs__spec__introduce.zh-CN.md.444fdc2a.async.js",5514],["docs__spec__illustration.zh-CN.md.b4705fc7.async.js",5535],["components__upload__index.zh-CN.md.ac8dbbd4.async.js",5610],["docs__react__use-custom-date-library.en-US.md.440fe887.async.js",5674],["docs__blog__form-names.zh-CN.md.c1c2bc77.async.js",5696],["docs__spec__invitation.zh-CN.md.b085cdb1.async.js",5719],["components__transfer__index.zh-CN.md.cf432d36.async.js",5725],["components__message__index.zh-CN.md.96338d84.async.js",5764],["docs__blog__github-actions-workflow.en-US.md.0ae35485.async.js",5773],["docs__blog__extract-ssr.en-US.md.1fd250f8.async.js",5814],["docs__spec__overview.en-US.md.e96cb0ac.async.js",5835],["components__grid__index.en-US.md.6f097212.async.js",5841],["components__form__index.zh-CN.md.4485f289.async.js",5874],["docs__react__use-with-create-react-app.en-US.md.9b291c16.async.js",5882],["components__mentions__index.zh-CN.md.aacc27b1.async.js",5981],["components__collapse__index.en-US.md.76e0f63a.async.js",5990],["docs__blog__notification-stack.zh-CN.md.56dacfa6.async.js",6094],["docs__spec__stay.zh-CN.md.905ed2a7.async.js",6105],["components__descriptions__index.zh-CN.md.c20a97a1.async.js",6130],["docs__react__use-with-create-react-app.zh-CN.md.c9cf1aba.async.js",6156],["docs__blog__getContainer.zh-CN.md.49e66aa4.async.js",6157],["docs__blog__type-util.zh-CN.md.e335f1ed.async.js",6166],["components__tour__index.en-US.md.98fa5e9e.async.js",6176],["components__form__index.en-US.md.c5c48ace.async.js",6252],["docs__react__use-with-next.zh-CN.md.4a6a29c4.async.js",6256],["components__dropdown__index.zh-CN.md.c0bcba98.async.js",6274],["components__pagination__index.zh-CN.md.547f6685.async.js",6299],["docs__blog__virtual-table.zh-CN.md.77c8dba9.async.js",6309],["components__slider__index.en-US.md.249d7fed.async.js",6341],["docs__react__getting-started.zh-CN.md.9f81cb6e.async.js",6373],["docs__react__common-props.zh-CN.md.d587653f.async.js",6411],["components__qr-code__index.zh-CN.md.18b3d8f2.async.js",6438],["docs__spec__direct.zh-CN.md.0da90091.async.js",6468],["components__calendar__index.zh-CN.md.0cfd3b0d.async.js",6507],["docs__spec__contrast.en-US.md.f921ab10.async.js",6514],["components__message__index.en-US.md.44e9d1ed.async.js",6518],["docs__spec__alignment.en-US.md.6f15e223.async.js",6519],["components__select__index.zh-CN.md.0a07fad9.async.js",6552],["docs__blog__build-ghost.en-US.md.9b0f05d6.async.js",6555],["docs__blog__historical-debt.zh-CN.md.b69d7807.async.js",6559],["components__steps__index.zh-CN.md.b578543c.async.js",6573],["dumi__pages__index-cn__index.16093858.async.js",6591],["docs__blog__css-var-plan.en-US.md.6b476553.async.js",6598],["docs__blog__virtual-table.en-US.md.e96478ab.async.js",6600],["docs__react__use-custom-date-library.zh-CN.md.2651ac89.async.js",6608],["components__rate__index.en-US.md.3860e869.async.js",6669],["components__overview__index.zh-CN.md.f519f3a5.async.js",6698],["components__modal__index.zh-CN.md.93afa1db.async.js",6718],["docs__spec__detail-page.zh-CN.md.3eefec15.async.js",6759],["components__input-number__index.zh-CN.md.fb885def.async.js",6767],["docs__blog__suspense.en-US.md.b44b4f5c.async.js",6771],["docs__blog__happy-work.en-US.md.c6d38e8b.async.js",6809],["components__timeline__index.en-US.md.f3188479.async.js",6812],["docs__spec__research-list.zh-CN.md.9cf98a03.async.js",6870],["docs__spec__data-list.zh-CN.md.2ee7abd1.async.js",6881],["components___util__index.en-US.md.2eb93d17.async.js",6887],["6906.4867f47c.async.js",6906],["docs__blog__check-conduct.en-US.md.164ee4cd.async.js",6909],["components__breadcrumb__index.zh-CN.md.d892f6d1.async.js",6914],["docs__spec__illustration.en-US.md.32f2be92.async.js",6925],["components__typography__index.zh-CN.md.db98010c.async.js",6937],["components__time-picker__index.en-US.md.953aae49.async.js",6984],["components__float-button__index.en-US.md.4d5676f2.async.js",7005],["components__space__index.zh-CN.md.d6836a85.async.js",7232],["docs__blog__config-provider-style.en-US.md.59aaa058.async.js",7247],["docs__spec__invitation.en-US.md.d530f5d8.async.js",7304],["docs__spec__motion.en-US.md.b34ec04e.async.js",7306],["components__anchor__index.en-US.md.84194d91.async.js",7339],["docs__spec__navigation.en-US.md.8291634f.async.js",7541],["docs__spec__direct.en-US.md.816974fa.async.js",7557],["docs__spec__data-display.zh-CN.md.e6cbfe08.async.js",7558],["components__icon__index.en-US.md.c2d215dc.async.js",7578],["components__progress__index.zh-CN.md.1d4c524c.async.js",7579],["docs__spec__stay.en-US.md.42f04383.async.js",7586],["7602.4550e86d.async.js",7602],["docs__spec__repetition.en-US.md.d85aec30.async.js",7607],["components__anchor__index.zh-CN.md.02db2987.async.js",7610],["components__segmented__index.en-US.md.454250ea.async.js",7648],["docs__spec__contrast.zh-CN.md.982be59f.async.js",7669],["docs__react__migrate-less-variables.en-US.md.d2206d89.async.js",7706],["components__carousel__index.en-US.md.4aaf767d.async.js",7716],["components__badge__index.zh-CN.md.4b7e4488.async.js",7729],["components__tooltip__index.en-US.md.e4035042.async.js",7738],["components__alert__index.en-US.md.84689e3f.async.js",7743],["components__drawer__index.en-US.md.03507e48.async.js",7764],["components__table__index.en-US.md.29fde637.async.js",7812],["docs__spec__icon.zh-CN.md.368ac2a0.async.js",7817],["components__overview__index.en-US.md.d79ccc01.async.js",7869],["7898.06ce979b.async.js",7898],["docs__spec__introduce.en-US.md.19839421.async.js",7931],["docs__blog__modal-hook-order.en-US.md.6eed57a3.async.js",8005],["docs__blog__mock-project-build.en-US.md.289d3f77.async.js",8017],["docs__spec__copywriting.en-US.md.de2b0ab0.async.js",8052],["components__list__index.en-US.md.d9c268ad.async.js",8059],["docs__react__server-side-rendering.zh-CN.md.1ed8e9f9.async.js",8110],["components__image__index.zh-CN.md.2f73cf3a.async.js",8123],["docs__blog__happy-work.zh-CN.md.44fcf1fb.async.js",8136],["docs__spec__reaction.zh-CN.md.9c026d12.async.js",8146],["docs__spec__visualization-page.en-US.md.e55db0e5.async.js",8179],["components__date-picker__index.en-US.md.7ec53af6.async.js",8182],["docs__react__use-with-vite.zh-CN.md.bbb8743a.async.js",8203],["components__date-picker__index.zh-CN.md.99ebf566.async.js",8242],["docs__spec__alignment.zh-CN.md.e4771ba4.async.js",8248],["components__affix__index.zh-CN.md.e9a5df11.async.js",8273],["docs__blog__color-picker.zh-CN.md.50d6c660.async.js",8281],["components__app__index.zh-CN.md.68812531.async.js",8288],["docs__spec__data-format.en-US.md.20976c2d.async.js",8307],["docs__react__contributing.en-US.md.f0e1401e.async.js",8356],["docs__spec__research-workbench.zh-CN.md.cc2f8238.async.js",8377],["docs__blog__to-be-what-you-see.zh-CN.md.10fe4dae.async.js",8381],["docs__react__use-with-rsbuild.zh-CN.md.a7047824.async.js",8392],["components__notification__index.en-US.md.4b6d8896.async.js",8466],["components__segmented__index.zh-CN.md.26bc41ae.async.js",8529],["CHANGELOG.en-US.md.1d033170.async.js",8600],["docs__react__css-variables.en-US.md.da94b7e0.async.js",8638],["docs__spec__research-form.en-US.md.c7a3136d.async.js",8651],["components__statistic__index.en-US.md.45c1c43e.async.js",8706],["8732.95e4751a.async.js",8732],["docs__spec__buttons.en-US.md.c3d07dea.async.js",8769],["docs__blog__hydrate-cssinjs.en-US.md.8b93a043.async.js",8786],["components__modal__index.en-US.md.461a3dda.async.js",8808],["components__auto-complete__index.zh-CN.md.b6789edb.async.js",8816],["docs__spec__navigation.zh-CN.md.a47a8368.async.js",8833],["dumi__pages__index__index.733f9984.async.js",8863],["nm__dumi__dist__client__pages__Demo__index.6d6a6f36.async.js",8878],["docs__blog__render-times.zh-CN.md.92d53c13.async.js",8901],["components__tabs__index.zh-CN.md.a6f174da.async.js",8928],["components__popconfirm__index.en-US.md.41cdb1e1.async.js",9015],["9020.3b679a43.async.js",9020],["docs__blog__historical-debt.en-US.md.6ebf8fe8.async.js",9039],["components__color-picker__index.zh-CN.md.74c9e3ef.async.js",9041],["docs__spec__research-navigation.en-US.md.b14de8fd.async.js",9052],["docs__spec__data-display.en-US.md.e3291a57.async.js",9112],["docs__spec__research-list.en-US.md.642c1c14.async.js",9180],["docs__spec__copywriting.zh-CN.md.849f4488.async.js",9193],["docs__spec__data-entry.en-US.md.0e22ffcf.async.js",9223],["docs__blog__config-provider-style.zh-CN.md.af809bf0.async.js",9225],["components__input-number__index.en-US.md.00a725f6.async.js",9237],["docs__blog__tooltip-align.zh-CN.md.bae44807.async.js",9292],["docs__blog__to-be-collaborator.en-US.md.b9c66b49.async.js",9335],["docs__spec__data-entry.zh-CN.md.26b73b87.async.js",9365],["components__image__index.en-US.md.0062b102.async.js",9377],["components__upload__index.en-US.md.b95d2688.async.js",9466],["dumi__pages__theme-editor-cn__index.c460049f.async.js",9482],["docs__react__compatible-style.en-US.md.4cd8786c.async.js",9504],["components__menu__index.zh-CN.md.a4c00430.async.js",9527],["components__skeleton__index.zh-CN.md.6c205fba.async.js",9582],["components__result__index.en-US.md.5b366045.async.js",9610],["components__breadcrumb__index.en-US.md.2e50db16.async.js",9653],["components__watermark__index.zh-CN.md.547438ab.async.js",9664],["components__switch__index.en-US.md.d2e127a1.async.js",9675],["docs__blog__render-times.en-US.md.e8e78454.async.js",9695],["docs__blog__build-ghost.zh-CN.md.f49dd6cd.async.js",9710],["docs__react__recommendation.en-US.md.0c0e0bb5.async.js",9789],["components__tour__index.zh-CN.md.51c282f8.async.js",9871],["components__radio__index.zh-CN.md.69219d8e.async.js",9876],["components__button__index.zh-CN.md.214206f9.async.js",9884],["docs__react__introduce.en-US.md.90cf0508.async.js",9953],["docs__react__migration-v5.en-US.md.bf92fe76.async.js",9969]],"r":{"/*":[110,237,12,298,309,38,65],"/":[255,269,304,12,298,309,38,65],"/theme-editor-cn":[324,12,298,309,38,65],"/theme-editor":[154,12,298,309,38,65],"/index-cn":[222,255,269,12,298,309,38,65],"/changelog-cn":[148,12,298,309,38,65],"/changelog":[294,12,298,309,38,65],"/~demos/:id":[305,38,309,65],"/docs/resources":[58,12,298,309,38,65],"/docs/resources-cn":[22,12,298,309,38,65],"/components/_util":[236,12,298,309,38,65],"/components/_util-cn":[62,12,298,309,38,65],"/components/affix":[103,12,298,309,38,65],"/components/affix-cn":[284,12,298,309,38,65],"/components/alert":[264,12,298,309,38,65],"/components/alert-cn":[160,12,298,309,38,65],"/components/anchor":[248,12,298,309,38,65],"/components/anchor-cn":[257,12,298,309,38,65],"/components/app":[77,12,298,309,38,65],"/components/app-cn":[286,12,298,309,38,65],"/components/auto-complete":[134,12,298,309,38,65],"/components/auto-complete-cn":[302,12,298,309,38,65],"/components/avatar":[171,12,298,309,38,65],"/components/avatar-cn":[0,12,298,309,38,65],"/components/badge":[165,12,298,309,38,65],"/components/badge-cn":[262,12,298,309,38,65],"/components/breadcrumb":[329,12,298,309,38,65],"/components/breadcrumb-cn":[239,12,298,309,38,65],"/components/button":[88,12,298,309,38,65],"/components/button-cn":[337,12,298,309,38,65],"/components/calendar":[121,12,298,309,38,65],"/components/calendar-cn":[214,12,298,309,38,65],"/components/card":[55,12,298,309,38,65],"/components/card-cn":[18,12,298,309,38,65],"/components/carousel":[261,12,298,309,38,65],"/components/carousel-cn":[132,12,298,309,38,65],"/components/cascader":[122,12,298,309,38,65],"/components/cascader-cn":[94,12,298,309,38,65],"/components/checkbox":[93,12,298,309,38,65],"/components/checkbox-cn":[30,12,298,309,38,65],"/components/collapse":[196,12,298,309,38,65],"/components/collapse-cn":[159,12,298,309,38,65],"/components/color-picker":[107,12,298,309,38,65],"/components/color-picker-cn":[311,12,298,309,38,65],"/components/config-provider":[158,12,298,309,38,65],"/components/config-provider-cn":[29,12,298,309,38,65],"/components/date-picker":[280,12,298,309,38,65],"/components/date-picker-cn":[282,12,298,309,38,65],"/components/descriptions":[83,12,298,309,38,65],"/components/descriptions-cn":[199,12,298,309,38,65],"/components/divider":[49,12,298,309,38,65],"/components/divider-cn":[128,12,298,309,38,65],"/components/drawer":[265,12,298,309,38,65],"/components/drawer-cn":[79,12,298,309,38,65],"/components/dropdown":[75,12,298,309,38,65],"/components/dropdown-cn":[206,12,298,309,38,65],"/components/empty":[15,12,298,309,38,65],"/components/empty-cn":[157,12,298,309,38,65],"/components/flex":[69,12,298,309,38,65],"/components/flex-cn":[95,12,298,309,38,65],"/components/float-button":[243,12,298,309,38,65],"/components/float-button-cn":[14,12,298,309,38,65],"/components/form":[204,12,298,309,38,65],"/components/form-cn":[193,12,298,309,38,65],"/components/grid":[192,12,298,309,38,65],"/components/grid-cn":[90,12,298,309,38,65],"/components/icon":[252,12,298,309,38,65],"/components/icon-cn":[59,12,298,309,38,65],"/components/image":[322,12,298,309,38,65],"/components/image-cn":[276,12,298,309,38,65],"/components/input-number":[318,12,298,309,38,65],"/components/input-number-cn":[230,12,298,309,38,65],"/components/input":[6,12,298,309,38,65],"/components/input-cn":[119,12,298,309,38,65],"/components/layout":[161,12,298,309,38,65],"/components/layout-cn":[120,12,298,309,38,65],"/components/list":[274,12,298,309,38,65],"/components/list-cn":[10,12,298,309,38,65],"/components/mentions":[33,12,298,309,38,65],"/components/mentions-cn":[195,12,298,309,38,65],"/components/menu":[78,12,298,309,38,65],"/components/menu-cn":[326,12,298,309,38,65],"/components/message":[216,12,298,309,38,65],"/components/message-cn":[188,12,298,309,38,65],"/components/modal":[301,12,298,309,38,65],"/components/modal-cn":[228,12,298,309,38,65],"/components/notification":[292,12,298,309,38,65],"/components/notification-cn":[114,12,298,309,38,65],"/components/overview":[268,12,298,309,38,65],"/components/overview-cn":[227,12,298,309,38,65],"/components/pagination":[151,12,298,309,38,65],"/components/pagination-cn":[207,12,298,309,38,65],"/components/popconfirm":[308,12,298,309,38,65],"/components/popconfirm-cn":[42,12,298,309,38,65],"/components/popover":[164,12,298,309,38,65],"/components/popover-cn":[99,12,298,309,38,65],"/components/progress":[43,12,298,309,38,65],"/components/progress-cn":[253,12,298,309,38,65],"/components/qr-code":[101,12,298,309,38,65],"/components/qr-code-cn":[212,12,298,309,38,65],"/components/radio":[44,12,298,309,38,65],"/components/radio-cn":[336,12,298,309,38,65],"/components/rate":[226,12,298,309,38,65],"/components/rate-cn":[149,12,298,309,38,65],"/components/result":[328,12,298,309,38,65],"/components/result-cn":[61,12,298,309,38,65],"/components/segmented":[258,12,298,309,38,65],"/components/segmented-cn":[293,12,298,309,38,65],"/components/select":[163,12,298,309,38,65],"/components/select-cn":[218,12,298,309,38,65],"/components/skeleton":[54,12,298,309,38,65],"/components/skeleton-cn":[327,12,298,309,38,65],"/components/slider":[209,12,298,309,38,65],"/components/slider-cn":[87,12,298,309,38,65],"/components/space":[32,12,298,309,38,65],"/components/space-cn":[244,12,298,309,38,65],"/components/spin":[177,12,298,309,38,65],"/components/spin-cn":[97,12,298,309,38,65],"/components/statistic":[297,12,298,309,38,65],"/components/statistic-cn":[100,12,298,309,38,65],"/components/steps":[2,12,298,309,38,65],"/components/steps-cn":[221,12,298,309,38,65],"/components/switch":[331,12,298,309,38,65],"/components/switch-cn":[57,12,298,309,38,65],"/components/table":[266,12,298,309,38,65],"/components/table-cn":[85,12,298,309,38,65],"/components/tabs":[178,12,298,309,38,65],"/components/tabs-cn":[307,12,298,309,38,65],"/components/tag":[84,12,298,309,38,65],"/components/tag-cn":[25,12,298,309,38,65],"/components/time-picker":[242,12,298,309,38,65],"/components/time-picker-cn":[39,12,298,309,38,65],"/components/timeline":[233,12,298,309,38,65],"/components/timeline-cn":[68,12,298,309,38,65],"/components/tooltip":[263,12,298,309,38,65],"/components/tooltip-cn":[108,12,298,309,38,65],"/components/tour":[203,12,298,309,38,65],"/components/tour-cn":[335,12,298,309,38,65],"/components/transfer":[16,12,298,309,38,65],"/components/transfer-cn":[187,12,298,309,38,65],"/components/tree-select":[133,12,298,309,38,65],"/components/tree-select-cn":[36,12,298,309,38,65],"/components/tree":[40,12,298,309,38,65],"/components/tree-cn":[13,12,298,309,38,65],"/components/typography":[66,12,298,309,38,65],"/components/typography-cn":[241,12,298,309,38,65],"/components/upload":[323,12,298,309,38,65],"/components/upload-cn":[183,12,298,309,38,65],"/components/watermark":[144,12,298,309,38,65],"/components/watermark-cn":[330,12,298,309,38,65],"/docs/blog/contributor-development-maintenance-guide":[142,12,298,309,38,65],"/docs/blog/contributor-development-maintenance-guide-cn":[23,12,298,309,38,65],"/docs/spec/research-message-and-feedback":[137,12,298,309,38,65],"/docs/spec/research-message-and-feedback-cn":[126,12,298,309,38,65],"/docs/react/use-with-create-react-app":[194,12,298,309,38,65],"/docs/react/use-with-create-react-app-cn":[200,12,298,309,38,65],"/docs/react/use-custom-date-library":[184,12,298,309,38,65],"/docs/react/use-custom-date-library-cn":[225,12,298,309,38,65],"/docs/blog/github-actions-workflow":[189,12,298,309,38,65],"/docs/blog/github-actions-workflow-cn":[150,12,298,309,38,65],"/docs/react/migrate-less-variables":[260,12,298,309,38,65],"/docs/react/migrate-less-variables-cn":[9,12,298,309,38,65],"/docs/react/server-side-rendering":[131,12,298,309,38,65],"/docs/react/server-side-rendering-cn":[275,12,298,309,38,65],"/docs/blog/config-provider-style":[245,12,298,309,38,65],"/docs/blog/config-provider-style-cn":[317,12,298,309,38,65],"/docs/spec/research-navigation":[312,12,298,309,38,65],"/docs/spec/research-navigation-cn":[168,12,298,309,38,65],"/docs/blog/mock-project-build":[272,12,298,309,38,65],"/docs/blog/mock-project-build-cn":[67,12,298,309,38,65],"/docs/blog/notification-stack":[172,12,298,309,38,65],"/docs/blog/notification-stack-cn":[197,12,298,309,38,65],"/docs/blog/to-be-collaborator":[320,12,298,309,38,65],"/docs/blog/to-be-collaborator-cn":[146,12,298,309,38,65],"/docs/blog/to-be-what-you-see":[47,12,298,309,38,65],"/docs/blog/to-be-what-you-see-cn":[290,12,298,309,38,65],"/docs/spec/research-exception":[92,12,298,309,38,65],"/docs/spec/research-exception-cn":[5,12,298,309,38,65],"/docs/spec/research-workbench":[46,12,298,309,38,65],"/docs/spec/research-workbench-cn":[289,12,298,309,38,65],"/docs/spec/visualization-page":[279,12,298,309,38,65],"/docs/spec/visualization-page-cn":[26,12,298,309,38,65],"/docs/react/compatible-style":[325,12,298,309,38,65],"/docs/react/compatible-style-cn":[3,12,298,309,38,65],"/docs/react/use-with-rsbuild":[118,12,298,309,38,65],"/docs/react/use-with-rsbuild-cn":[291,12,298,309,38,65],"/docs/spec/research-overview":[76,12,298,309,38,65],"/docs/spec/research-overview-cn":[89,12,298,309,38,65],"/docs/blog/modal-hook-order":[271,12,298,309,38,65],"/docs/blog/modal-hook-order-cn":[129,12,298,309,38,65],"/docs/react/customize-theme":[11,12,298,309,38,65],"/docs/react/customize-theme-cn":[70,12,298,309,38,65],"/docs/react/getting-started":[24,12,298,309,38,65],"/docs/react/getting-started-cn":[210,12,298,309,38,65],"/docs/blog/historical-debt":[310,12,298,309,38,65],"/docs/blog/historical-debt-cn":[220,12,298,309,38,65],"/docs/blog/hydrate-cssinjs":[300,12,298,309,38,65],"/docs/blog/hydrate-cssinjs-cn":[28,12,298,309,38,65],"/docs/blog/testing-migrate":[63,12,298,309,38,65],"/docs/blog/testing-migrate-cn":[34,12,298,309,38,65],"/docs/react/recommendation":[334,12,298,309,38,65],"/docs/react/recommendation-cn":[17,12,298,309,38,65],"/docs/spec/research-result":[21,12,298,309,38,65],"/docs/spec/research-result-cn":[169,12,298,309,38,65],"/docs/blog/why-not-static":[116,12,298,309,38,65],"/docs/blog/why-not-static-cn":[64,12,298,309,38,65],"/docs/react/css-variables":[295,12,298,309,38,65],"/docs/react/css-variables-cn":[136,12,298,309,38,65],"/docs/react/use-with-next":[8,12,298,309,38,65],"/docs/react/use-with-next-cn":[205,12,298,309,38,65],"/docs/react/use-with-vite":[115,12,298,309,38,65],"/docs/react/use-with-vite-cn":[281,12,298,309,38,65],"/docs/spec/research-empty":[35,12,298,309,38,65],"/docs/spec/research-empty-cn":[143,12,298,309,38,65],"/docs/blog/check-conduct":[238,12,298,309,38,65],"/docs/blog/check-conduct-cn":[73,12,298,309,38,65],"/docs/blog/line-ellipsis":[37,12,298,309,38,65],"/docs/blog/line-ellipsis-cn":[141,12,298,309,38,65],"/docs/blog/tooltip-align":[113,12,298,309,38,65],"/docs/blog/tooltip-align-cn":[319,12,298,309,38,65],"/docs/blog/virtual-table":[224,12,298,309,38,65],"/docs/blog/virtual-table-cn":[208,12,298,309,38,65],"/docs/react/common-props":[19,12,298,309,38,65],"/docs/react/common-props-cn":[211,12,298,309,38,65],"/docs/react/contributing":[288,12,298,309,38,65],"/docs/react/contributing-cn":[124,12,298,309,38,65],"/docs/react/migration-v5":[339,12,298,309,38,65],"/docs/react/migration-v5-cn":[152,12,298,309,38,65],"/docs/react/use-with-umi":[175,12,298,309,38,65],"/docs/react/use-with-umi-cn":[170,12,298,309,38,65],"/docs/spec/research-form":[296,12,298,309,38,65],"/docs/spec/research-form-cn":[140,12,298,309,38,65],"/docs/spec/research-list":[314,12,298,309,38,65],"/docs/spec/research-list-cn":[234,12,298,309,38,65],"/docs/blog/color-picker":[81,12,298,309,38,65],"/docs/blog/color-picker-cn":[285,12,298,309,38,65],"/docs/blog/css-var-plan":[223,12,298,309,38,65],"/docs/blog/css-var-plan-cn":[139,12,298,309,38,65],"/docs/blog/get-container":[86,12,298,309,38,65],"/docs/blog/get-container-cn":[201,12,298,309,38,65],"/docs/blog/issue-helper":[145,12,298,309,38,65],"/docs/blog/issue-helper-cn":[155,12,298,309,38,65],"/docs/blog/render-times":[332,12,298,309,38,65],"/docs/blog/render-times-cn":[306,12,298,309,38,65],"/docs/blog/tree-shaking":[109,12,298,309,38,65],"/docs/blog/tree-shaking-cn":[1,12,298,309,38,65],"/docs/spec/data-display":[313,12,298,309,38,65],"/docs/spec/data-display-cn":[251,12,298,309,38,65],"/docs/spec/illustration":[240,12,298,309,38,65],"/docs/spec/illustration-cn":[182,12,298,309,38,65],"/docs/blog/build-ghost":[219,12,298,309,38,65],"/docs/blog/build-ghost-cn":[333,12,298,309,38,65],"/docs/blog/extract-ssr":[190,12,298,309,38,65],"/docs/blog/extract-ssr-cn":[125,12,298,309,38,65],"/docs/spec/copywriting":[273,12,298,309,38,65],"/docs/spec/copywriting-cn":[315,12,298,309,38,65],"/docs/spec/data-format":[287,12,298,309,38,65],"/docs/spec/data-format-cn":[102,12,298,309,38,65],"/docs/spec/detail-page":[50,12,298,309,38,65],"/docs/spec/detail-page-cn":[229,12,298,309,38,65],"/docs/spec/lightweight":[27,12,298,309,38,65],"/docs/spec/lightweight-cn":[153,12,298,309,38,65],"/docs/blog/form-names":[60,12,298,309,38,65],"/docs/blog/form-names-cn":[185,12,298,309,38,65],"/docs/blog/happy-work":[232,12,298,309,38,65],"/docs/blog/happy-work-cn":[277,12,298,309,38,65],"/docs/react/introduce":[338,12,298,309,38,65],"/docs/react/introduce-cn":[117,12,298,309,38,65],"/docs/spec/data-entry":[316,12,298,309,38,65],"/docs/spec/data-entry-cn":[321,12,298,309,38,65],"/docs/spec/invitation":[246,12,298,309,38,65],"/docs/spec/invitation-cn":[186,12,298,309,38,65],"/docs/spec/navigation":[249,12,298,309,38,65],"/docs/spec/navigation-cn":[303,12,298,309,38,65],"/docs/spec/repetition":[256,12,298,309,38,65],"/docs/spec/repetition-cn":[179,12,298,309,38,65],"/docs/spec/transition":[53,12,298,309,38,65],"/docs/spec/transition-cn":[156,12,298,309,38,65],"/docs/blog/css-in-js":[130,12,298,309,38,65],"/docs/blog/css-in-js-cn":[147,12,298,309,38,65],"/docs/blog/type-util":[41,12,298,309,38,65],"/docs/blog/type-util-cn":[202,12,298,309,38,65],"/docs/spec/alignment":[217,12,298,309,38,65],"/docs/spec/alignment-cn":[283,12,298,309,38,65],"/docs/spec/data-list":[138,12,298,309,38,65],"/docs/spec/data-list-cn":[235,12,298,309,38,65],"/docs/spec/introduce":[270,12,298,309,38,65],"/docs/spec/introduce-cn":[181,12,298,309,38,65],"/docs/spec/proximity":[176,12,298,309,38,65],"/docs/spec/proximity-cn":[74,12,298,309,38,65],"/docs/blog/suspense":[231,12,298,309,38,65],"/docs/blog/suspense-cn":[173,12,298,309,38,65],"/docs/spec/contrast":[215,12,298,309,38,65],"/docs/spec/contrast-cn":[259,12,298,309,38,65],"/docs/spec/feedback":[4,12,298,309,38,65],"/docs/spec/feedback-cn":[123,12,298,309,38,65],"/docs/spec/overview":[191,12,298,309,38,65],"/docs/spec/overview-cn":[82,12,298,309,38,65],"/docs/spec/reaction":[20,12,298,309,38,65],"/docs/spec/reaction-cn":[278,12,298,309,38,65],"/docs/spec/buttons":[299,12,298,309,38,65],"/docs/spec/buttons-cn":[72,12,298,309,38,65],"/docs/blog/v4-ood":[48,12,298,309,38,65],"/docs/blog/v4-ood-cn":[91,12,298,309,38,65],"/docs/spec/colors":[167,12,298,309,38,65],"/docs/spec/colors-cn":[7,12,298,309,38,65],"/docs/spec/direct":[250,12,298,309,38,65],"/docs/spec/direct-cn":[213,12,298,309,38,65],"/docs/spec/layout":[112,12,298,309,38,65],"/docs/spec/layout-cn":[106,12,298,309,38,65],"/docs/spec/motion":[247,12,298,309,38,65],"/docs/spec/motion-cn":[166,12,298,309,38,65],"/docs/spec/shadow":[162,12,298,309,38,65],"/docs/spec/shadow-cn":[80,12,298,309,38,65],"/docs/spec/values":[56,12,298,309,38,65],"/docs/spec/values-cn":[174,12,298,309,38,65],"/docs/spec/visual":[98,12,298,309,38,65],"/docs/spec/visual-cn":[111,12,298,309,38,65],"/docs/react/i18n":[51,12,298,309,38,65],"/docs/react/i18n-cn":[96,12,298,309,38,65],"/docs/spec/cases":[104,12,298,309,38,65],"/docs/spec/cases-cn":[31,12,298,309,38,65],"/docs/react/faq":[45,12,298,309,38,65],"/docs/react/faq-cn":[127,12,298,309,38,65],"/docs/spec/dark":[180,12,298,309,38,65],"/docs/spec/dark-cn":[52,12,298,309,38,65],"/docs/spec/font":[135,12,298,309,38,65],"/docs/spec/font-cn":[71,12,298,309,38,65],"/docs/spec/icon":[105,12,298,309,38,65],"/docs/spec/icon-cn":[267,12,298,309,38,65],"/docs/spec/stay":[254,12,298,309,38,65],"/docs/spec/stay-cn":[198,12,298,309,38,65]}},{publicPath:"/"});null==i||i.forEach((function(t){var e,n=t.type,a=t.url;if("js"===n)(e=r("script")).src=a,e.async=!0;else{if("css"!==n)return;(e=r("link")).href=a,e.rel="preload",e.as="style"}t.attrs.forEach((function(t){e.setAttribute(t[0],t[1]||"")})),c.appendChild(e)}))}}();</script>
+</head>
+<body>
+<div id="root"></div>
+<script src="/umi.5166bce9.js" crossorigin="anonymous"></script>
+<script async>(function createMirrorModal() {
+  if (
+    (navigator.languages.includes('zh') || navigator.languages.includes('zh-CN')) &&
+    /-cn\/?$/.test(window.location.pathname) &&
+    !['ant-design.gitee.io', 'ant-design.antgroup.com'].includes(window.location.hostname) &&
+    !window.location.host.includes('surge')
+  ) {
+    const ANTD_DOT_NOT_SHOW_MIRROR_MODAL = 'ANT_DESIGN_DO_NOT_OPEN_MIRROR_MODAL';
+
+    const lastShowTime = window.localStorage.getItem(ANTD_DOT_NOT_SHOW_MIRROR_MODAL);
+    if (
+      lastShowTime &&
+      lastShowTime !== 'true' &&
+      Date.now() - new Date(lastShowTime).getTime() < 7 * 24 * 60 * 60 * 1000
+    ) {
+      return;
+    }
+
+    const style = document.createElement('style');
+    style.innerHTML = `
+  @keyframes mirror-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes mirror-zoom-in {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .mirror-modal-mask {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    animation: mirror-fade-in 0.3s forwards;
+  }
+
+  .mirror-modal-dialog {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 20px 24px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    animation: mirror-zoom-in 0.3s forwards;
+    box-sizing: border-box;
+    max-width: 100vw;
+    z-index: 9999;
+  }
+
+  .mirror-modal-title {
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .mirror-modal-content {
+    font-size: 14px;
+    align-self: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .mirror-modal-btns {
+    align-self: flex-end;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .mirror-modal-btn {
+    border-radius: 6px;
+    cursor: pointer;
+    height: 32px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 4px 16px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .mirror-modal-confirm-btn {
+    background: #1677ff;
+    color: #fff;
+  }
+
+  .mirror-modal-confirm-btn:hover {
+    background: #4096ff;
+  }
+
+  .mirror-modal-confirm-btn:active {
+    background: #0958d9;
+  }
+
+  .mirror-modal-cancel-btn {
+    border: 1px solid #eee;
+    color: #000;
+    margin-inline-end: 8px;
+  }
+
+  .mirror-modal-cancel-btn:hover {
+    border-color: #4096ff;
+    color: #4096ff
+  }
+
+  .mirror-modal-cancel-btn:active {
+    border-color: #0958d9;
+    color: #0958d9;
+  }
+    `;
+    document.head.append(style);
+
+    const modal = document.createElement('div');
+    modal.className = 'mirror-modal-mask';
+
+    const dialog = document.createElement('div');
+    dialog.className = 'mirror-modal-dialog';
+    modal.append(dialog);
+
+    const title = document.createElement('div');
+    title.className = 'mirror-modal-title';
+    title.innerText = '提示';
+    dialog.append(title);
+
+    const content = document.createElement('div');
+    content.className = 'mirror-modal-content';
+    content.innerText = '🚀 国内用户推荐访问国内镜像以获得极速体验～';
+    dialog.append(content);
+
+    const btnWrapper = document.createElement('div');
+    btnWrapper.className = 'mirror-modal-btns';
+    dialog.append(btnWrapper);
+
+    const cancelBtn = document.createElement('a');
+    cancelBtn.className = 'mirror-modal-cancel-btn mirror-modal-btn';
+    cancelBtn.innerText = '7 天内不再显示';
+    btnWrapper.append(cancelBtn);
+    cancelBtn.addEventListener('click', () => {
+      window.localStorage.setItem(ANTD_DOT_NOT_SHOW_MIRROR_MODAL, new Date().toISOString());
+      document.body.removeChild(modal);
+      document.head.removeChild(style);
+      document.body.style.overflow = '';
+    });
+
+    const confirmBtn = document.createElement('a');
+    confirmBtn.className = 'mirror-modal-confirm-btn mirror-modal-btn';
+    confirmBtn.href = window.location.href.replace(window.location.host, 'ant-design.antgroup.com');
+    confirmBtn.innerText = '🚀 立刻前往';
+    btnWrapper.append(confirmBtn);
+
+    document.body.append(modal);
+    document.body.style.overflow = 'hidden';
+  }
+})();
+</script>
+</body>
+</html>
